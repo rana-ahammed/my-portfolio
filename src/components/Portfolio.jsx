@@ -31,7 +31,7 @@ const Portfolio = () => {
 				>
 					<img
 						className="h-64 w-full object-cover object-top"
-						src="../assets/social-media-portfolio.png"
+						src="../assets/rana-shop-portfolio.png"
 						alt="rana-shop-portfolio"
 					/>
 					<p className="mt-5 font-opensans font-semibold text-lg">
