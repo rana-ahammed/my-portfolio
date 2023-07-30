@@ -23,7 +23,7 @@ const About = () => {
 				>
 					<div className="flex justify-center basis-3/5 xl:order-1">
 						<img
-							className="xs:w-300px xs:h-300px w-400 h-400 max-w-[300px] xl:max-w-[400px]"
+							className="xs:w-300px xs:h-300px w-400 h-400 max-w-[300px] xl:max-w-[400px] rounded-md"
 							src="../assets/profile-image.jpeg"
 							alt="profile-icon"
 						/>

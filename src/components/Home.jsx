@@ -23,7 +23,7 @@ const Home = () => {
 					}}
 				>
 					<img
-						className="z-10 xs:w-310px xs:h-310px w-400 h-400 max-w-[320px] xl:max-w-[400px] rounded-lg"
+						className="z-10 xs:w-310px xs:h-310px w-400 h-400 max-w-[320px] xl:max-w-[400px] rounded-full p-2 shadow-lg"
 						src="../assets/profile-image-circular.png"
 						alt="profile"
 					/>

@@ -172,13 +172,12 @@ const Contact = () => {
 							<textarea
 								rows="9"
 								cols="30"
-								resize="none"
 								placeholder="Write me"
 								{...register("message", {
 									required: true,
 									maxLength: 2000,
 								})}
-								className="h-auto w-full text-md font-opensans font-light py-2 px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500 transition duration-200 mb-2"
+								className="h-auto w-full text-md font-opensans font-light py-2 px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500 transition duration-200 mb-2 resize-none"
 							/>
 							{errors.message && (
 								<p className="text-red-500 ml-5 mb-8">
