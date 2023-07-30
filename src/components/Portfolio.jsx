@@ -113,16 +113,14 @@ const Portfolio = () => {
 					alt="rana-shop-portfolio"
 				/>
 				<p className="xs:text-md lg:text-xl font-semibold font-opensans text-center">
-					Project's Name: Ecommerce
+					Project's Name: Rana-Shop
 				</p>
 				<p className="xs:text-sm lg:text-md font-semibold text-gray-600 font-opensans py-5">
 					<strong className="text-lg font-bold text-black">
 						Technology Used:
 					</strong>{" "}
-					React| CSS3 | Material-UI | ChratJs | ChartJs-2 |
-					Redux-Thunk | ReactJs Pagination | NodeJs | Express | Redux
-					| Mongoose | MongoDB | React-toastify | Cloudinary |
-					Nodemailer | Stripe
+					React| TailwindCSS | NodeJs | Express | Redux-Toolkit |
+					Mongoose | MongoDB | Nodemailer | Stripe
 				</p>
 				<div className="flex gap-5 justify-center">
 					<button className="bg-gray-300 hover:bg-gray-400 p-2 text-black font-opensans font-semibold rounded-md">
