@@ -3,7 +3,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaWhatsapp } from "react-icons/fa";
 import { RiSkypeLine } from "react-icons/ri";
 import { useForm } from "react-hook-form";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const Contact = () => {
 	const {
@@ -19,7 +19,7 @@ const Contact = () => {
 		}
 	};
 	return (
-		<section id="contact" className="pt-24">
+		<section id="contact" className="pt-24 w-full">
 			<p className="text-2xl font-semibold font-opensans text-center mb-16">
 				Contact Me
 			</p>
@@ -28,17 +28,7 @@ const Contact = () => {
 				{/* LEFT SECTION */}
 
 				<div className="w-100% xl:w-2/5">
-					<motion.div
-						className="flex flex-col w-full bg-gray-200 text-black items-center p-4 rounded-lg"
-						initial="hidden"
-						whileInView="visible"
-						viewport={{ once: false, amount: 0.5 }}
-						transition={{ duration: 1 }}
-						variants={{
-							hidden: { opacity: 0, x: -100 },
-							visible: { opacity: 1, x: 0 },
-						}}
-					>
+					<div className="bg-gray-200 mb-8 p-4 flex flex-col items-center rounded-md text-black">
 						<HiOutlineMail className="text-3xl mb-4" />
 						<p className="text-md font-opensans font-semibold">
 							Email
@@ -55,18 +45,9 @@ const Contact = () => {
 						>
 							Contact me &rarr;
 						</a>
-					</motion.div>
-					<motion.div
-						className="flex flex-col w-full bg-gray-200 text-black items-center my-2 p-4 rounded-lg"
-						initial="hidden"
-						whileInView="visible"
-						viewport={{ once: false, amount: 0.5 }}
-						transition={{ duration: 1 }}
-						variants={{
-							hidden: { opacity: 0, x: -100 },
-							visible: { opacity: 1, x: 0 },
-						}}
-					>
+					</div>
+
+					<div className="bg-gray-200 mb-8 p-4 flex flex-col items-center rounded-md text-black">
 						<FaWhatsapp className="text-3xl mb-4" />
 						<p className="text-md font-opensans font-semibold">
 							WhatsApp
@@ -83,18 +64,9 @@ const Contact = () => {
 						>
 							Contact me &rarr;
 						</a>
-					</motion.div>
-					<motion.div
-						className="flex flex-col w-full bg-gray-200 text-black items-center my-2 p-4 rounded-lg"
-						initial="hidden"
-						whileInView="visible"
-						viewport={{ once: false, amount: 0.5 }}
-						transition={{ duration: 1 }}
-						variants={{
-							hidden: { opacity: 0, x: -100 },
-							visible: { opacity: 1, x: 0 },
-						}}
-					>
+					</div>
+
+					<div className="bg-gray-200 mb-8 p-4 flex flex-col items-center rounded-md text-black">
 						<RiSkypeLine className="text-3xl mb-4" />
 						<p className="text-md font-opensans font-semibold">
 							Skype
@@ -111,91 +83,82 @@ const Contact = () => {
 						>
 							Contact me &rarr;
 						</a>
-					</motion.div>
+					</div>
 				</div>
 
 				{/* RIGHT SECTION */}
 				<div className="w-100% xl:w-3/5">
 					{/* FORM SECTION */}
-					<motion.div
-						initial="hidden"
-						whileInView="visible"
-						viewport={{ once: false, amount: 0.5 }}
-						transition={{ duration: 1 }}
-						variants={{
-							hidden: { opacity: 0, x: 100 },
-							visible: { opacity: 1, x: 0 },
-						}}
-					>
-						<form
-							className="z-10 bg-gray-200 h-auto w-full p-4 rounded-lg xl:ml-12 text-black"
-							target="_blank"
-							onSubmit={onSubmit}
-							action="https://formsubmit.co/674d35914c4bb28cc7d7eb3c6ca20f93"
-							method="POST"
-						>
-							<input
-								type="text"
-								placeholder="Your Name"
-								{...register("name", {
-									required: true,
-									maxLength: 100,
-								})}
-								className="h-16 w-full text-md font-opensans font-light px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500  transition duration-200 mb-3 mt-2"
-							/>
-							{errors.name && (
-								<p className="text-red-500 ml-5 mb-8">
-									{errors.name.type === "required" &&
-										"* Your Name is required"}
-									{errors.name.type === "maxLength" &&
-										"Max length is 100 char."}
-								</p>
-							)}
-							<input
-								type="text"
-								placeholder="Your Email"
-								{...register("email", {
-									required: true,
-									pattern:
-										/^[A-Z0-9._%+-]+@[A-Z0-9._%+-]+\.[A-Z]{2,}$/i,
-								})}
-								className="h-16 w-full text-md font-opensans font-light px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500  transition duration-200 mb-3"
-							/>
-							{errors.email && (
-								<p className="text-red-500 ml-5 mb-8">
-									{errors.email.type === "required" &&
-										"* Your Email is required"}
-									{errors.email.type === "pattern" &&
-										"Invalid email address."}
-								</p>
-							)}
-							<textarea
-								rows="9"
-								cols="30"
-								placeholder="Write me"
-								{...register("message", {
-									required: true,
-									maxLength: 2000,
-								})}
-								className="h-auto w-full text-md font-opensans font-light py-2 px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500 transition duration-200 mb-2 resize-none"
-							/>
-							{errors.message && (
-								<p className="text-red-500 ml-5 mb-8">
-									{errors.message.type === "required" &&
-										"* Your Message is required"}
-									{errors.message.type === "maxLength" &&
-										"Max length is 2000 char."}
-								</p>
-							)}
 
-							<button
-								type="submit"
-								className="bg-yellow-400 block mx-auto font-semibold text-black mt-5 text-center  hover:bg-yellow-500 transition duration-500 rounded-lg xs:p-2 lg:p-5"
-							>
-								SEND ME A MESSAGE
-							</button>
-						</form>
-					</motion.div>
+					<form
+						className="z-10 bg-gray-200 h-auto w-full p-4 rounded-lg xl:ml-12 text-black"
+						target="_blank"
+						onSubmit={onSubmit}
+						action="https://formsubmit.co/674d35914c4bb28cc7d7eb3c6ca20f93"
+						method="POST"
+						autoComplete="off"
+					>
+						<input
+							type="text"
+							placeholder="Your Name"
+							{...register("name", {
+								required: true,
+								maxLength: 100,
+							})}
+							className="h-16 w-full text-md font-opensans font-light px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500  transition duration-200 mb-3 mt-2"
+						/>
+						{errors.name && (
+							<p className="text-red-500 ml-5 mb-8">
+								{errors.name.type === "required" &&
+									"* Your Name is required"}
+								{errors.name.type === "maxLength" &&
+									"Max length is 100 char."}
+							</p>
+						)}
+						<input
+							type="text"
+							placeholder="Your Email"
+							{...register("email", {
+								required: true,
+								pattern:
+									/^[A-Z0-9._%+-]+@[A-Z0-9._%+-]+\.[A-Z]{2,}$/i,
+							})}
+							className="h-16 w-full text-md font-opensans font-light px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500  transition duration-200 mb-3"
+						/>
+						{errors.email && (
+							<p className="text-red-500 ml-5 mb-8">
+								{errors.email.type === "required" &&
+									"* Your Email is required"}
+								{errors.email.type === "pattern" &&
+									"Invalid email address."}
+							</p>
+						)}
+						<textarea
+							rows="11"
+							cols="30"
+							placeholder="Write me"
+							{...register("message", {
+								required: true,
+								maxLength: 2000,
+							})}
+							className="h-auto w-full text-md font-opensans font-light py-2 px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500 transition duration-200 mb-2 resize-none"
+						/>
+						{errors.message && (
+							<p className="text-red-500 ml-5 mb-8">
+								{errors.message.type === "required" &&
+									"* Your Message is required"}
+								{errors.message.type === "maxLength" &&
+									"Max length is 2000 char."}
+							</p>
+						)}
+
+						<button
+							type="submit"
+							className="bg-sky-500 block mx-auto font-semibold text-white mt-5 text-center  hover:bg-sky-400 transition duration-500 rounded-lg px-4 py-2 lg:p-5"
+						>
+							SEND ME A MESSAGE
+						</button>
+					</form>
 				</div>
 			</div>
 		</section>

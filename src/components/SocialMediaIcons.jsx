@@ -2,7 +2,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const SocialMediaIcons = () => {
 	return (
-		<div className="flex justify-center gap-10">
+		<div className="flex justify-center gap-10 mt-6">
 			<a
 				href="https://linkedin.com/in/rana-ahammed"
 				target="_blank"

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
-import { motion } from "framer-motion";
 
 const Link = ({
 	page,
@@ -36,23 +35,83 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 	const [isMenuToggled, setIsMenuToggled] = useState(false);
 	const isDesktop = useMediaQuery("(min-width: 1024px)");
 	return (
-		<nav className="z-40 w-full fixed top-0 py-6 bg-gray-800">
-			<motion.div
-				initial="hidden"
-				whileInView="visible"
-				viewport={{ once: false, amount: 0.5 }}
-				transition={{ duration: 1 }}
-				variants={{
-					hidden: { opacity: 0, x: -100 },
-					visible: { opacity: 1, x: 0 },
-				}}
-			>
-				<div className="flex items-center justify-between mx-auto w-5/6">
-					<p className="font-playfair text-3xl font-bold">Rana</p>
+		<nav className="z-50 w-full fixed top-0 bg-gray-800">
+			<div className="flex items-center justify-between mx-auto py-6 w-5/6">
+				<p className="font-playfair text-3xl font-bold">Rana</p>
 
-					{/* DESKTOP NAV */}
-					{isDesktop ? (
-						<div className="flex justify-between gap-16 font-opensans text-md font-semibold">
+				{/* DESKTOP NAV */}
+				{isDesktop ? (
+					<div className="flex justify-between gap-16 font-opensans text-lg font-semibold">
+						<Link
+							page="Home"
+							selectedPage={selectedPage}
+							setSelectedPage={setSelectedPage}
+							isMenuToggled={isMenuToggled}
+							setIsMenuToggled={setIsMenuToggled}
+						/>
+						<Link
+							page="About"
+							selectedPage={selectedPage}
+							setSelectedPage={setSelectedPage}
+							isMenuToggled={isMenuToggled}
+							setIsMenuToggled={setIsMenuToggled}
+						/>
+						<Link
+							page="Skills"
+							selectedPage={selectedPage}
+							setSelectedPage={setSelectedPage}
+							isMenuToggled={isMenuToggled}
+							setIsMenuToggled={setIsMenuToggled}
+						/>
+						<Link
+							page="Services"
+							selectedPage={selectedPage}
+							setSelectedPage={setSelectedPage}
+							isMenuToggled={isMenuToggled}
+							setIsMenuToggled={setIsMenuToggled}
+						/>
+						<Link
+							page="Portfolio"
+							selectedPage={selectedPage}
+							setSelectedPage={setSelectedPage}
+							isMenuToggled={isMenuToggled}
+							setIsMenuToggled={setIsMenuToggled}
+						/>
+						<Link
+							page="Contact"
+							selectedPage={selectedPage}
+							setSelectedPage={setSelectedPage}
+							isMenuToggled={isMenuToggled}
+							setIsMenuToggled={setIsMenuToggled}
+						/>
+					</div>
+				) : (
+					<button
+						className="rounded-full bg-sky-500 p-2"
+						onClick={() => setIsMenuToggled(!isMenuToggled)}
+					>
+						<img src="../assets/menu-icon.svg" alt="menu-icon" />
+					</button>
+				)}
+
+				{/* MOBILE MENU */}
+				{!isDesktop && isMenuToggled && (
+					<div className="fixed right-0 bottom-0 h-full w-2/3 bg-sky-500">
+						{/* CLOSE ICON */}
+						<div className="flex justify-end p-12">
+							<button
+								onClick={() => setIsMenuToggled(!isMenuToggled)}
+							>
+								<img
+									className="rounded-full h-10 w-10"
+									src="../assets/close-icon.svg"
+									alt="close-icon"
+								/>
+							</button>
+						</div>
+
+						{/* MENU ITEMS */}
+						<div className="flex flex-col text-2xl xs:gap-5 text-white ml-[33%]">
 							<Link
 								page="Home"
 								selectedPage={selectedPage}
@@ -96,85 +155,9 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 								setIsMenuToggled={setIsMenuToggled}
 							/>
 						</div>
-					) : (
-						<button
-							className="rounded-full bg-pink-500 p-2"
-							onClick={() => setIsMenuToggled(!isMenuToggled)}
-						>
-							<img
-								src="../assets/menu-icon.svg"
-								alt="menu-icon"
-							/>
-						</button>
-					)}
-
-					{/* MOBILE MENU */}
-					{!isDesktop && isMenuToggled && (
-						<div className="fixed right-0 bottom-0 h-full w-2/3 bg-blue-500">
-							{/* CLOSE ICON */}
-							<div className="flex justify-end p-12">
-								<button
-									onClick={() =>
-										setIsMenuToggled(!isMenuToggled)
-									}
-								>
-									<img
-										className="rounded-full bg-red-500 h-10 w-10"
-										src="../assets/close-icon.svg"
-										alt="close-icon"
-									/>
-								</button>
-							</div>
-
-							{/* MENU ITEMS */}
-							<div className="flex flex-col text-2xl xs:gap-5 text-white ml-[33%]">
-								<Link
-									page="Home"
-									selectedPage={selectedPage}
-									setSelectedPage={setSelectedPage}
-									isMenuToggled={isMenuToggled}
-									setIsMenuToggled={setIsMenuToggled}
-								/>
-								<Link
-									page="About"
-									selectedPage={selectedPage}
-									setSelectedPage={setSelectedPage}
-									isMenuToggled={isMenuToggled}
-									setIsMenuToggled={setIsMenuToggled}
-								/>
-								<Link
-									page="Skills"
-									selectedPage={selectedPage}
-									setSelectedPage={setSelectedPage}
-									isMenuToggled={isMenuToggled}
-									setIsMenuToggled={setIsMenuToggled}
-								/>
-								<Link
-									page="Services"
-									selectedPage={selectedPage}
-									setSelectedPage={setSelectedPage}
-									isMenuToggled={isMenuToggled}
-									setIsMenuToggled={setIsMenuToggled}
-								/>
-								<Link
-									page="Portfolio"
-									selectedPage={selectedPage}
-									setSelectedPage={setSelectedPage}
-									isMenuToggled={isMenuToggled}
-									setIsMenuToggled={setIsMenuToggled}
-								/>
-								<Link
-									page="Contact"
-									selectedPage={selectedPage}
-									setSelectedPage={setSelectedPage}
-									isMenuToggled={isMenuToggled}
-									setIsMenuToggled={setIsMenuToggled}
-								/>
-							</div>
-						</div>
-					)}
-				</div>
-			</motion.div>
+					</div>
+				)}
+			</div>
 		</nav>
 	);
 };
