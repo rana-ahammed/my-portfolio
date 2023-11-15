@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
+import { FaHamburger } from "react-icons/fa";
 
 const Link = ({
 	page,
@@ -90,7 +91,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 						className="rounded-full bg-sky-400 p-2 text-black"
 						onClick={() => setIsMenuToggled(!isMenuToggled)}
 					>
-						<img src="../assets/menu-icon.svg" alt="menu-icon" />
+						<FaHamburger />
 					</button>
 				)}
 
