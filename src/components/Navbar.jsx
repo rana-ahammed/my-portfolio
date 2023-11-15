@@ -87,7 +87,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 					</div>
 				) : (
 					<button
-						className="rounded-full bg-sky-500 p-2"
+						className="rounded-full bg-sky-400 p-2 text-black"
 						onClick={() => setIsMenuToggled(!isMenuToggled)}
 					>
 						<img src="../assets/menu-icon.svg" alt="menu-icon" />
@@ -101,17 +101,14 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 						<div className="flex justify-end p-12">
 							<button
 								onClick={() => setIsMenuToggled(!isMenuToggled)}
+								className="text-black"
 							>
-								<img
-									className="rounded-full h-10 w-10"
-									src="../assets/close-icon.svg"
-									alt="close-icon"
-								/>
+								X
 							</button>
 						</div>
 
 						{/* MENU ITEMS */}
-						<div className="flex flex-col text-2xl xs:gap-5 text-white ml-[33%]">
+						<div className="flex flex-col text-2xl xs:gap-5 text-black ml-[33%]">
 							<Link
 								page="Home"
 								selectedPage={selectedPage}

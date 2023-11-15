@@ -23,7 +23,7 @@ const Portfolio = () => {
 						src="../assets/rana-shop-portfolio.png"
 						alt="rana-shop-portfolio"
 					/>
-					<p className="mt-5 font-opensans font-semibold text-lg lg:text-2xl text-sky-500">
+					<p className="mt-5 font-opensans font-semibold text-lg lg:text-2xl text-black">
 						Rana-Shop
 					</p>
 					<div
@@ -41,7 +41,7 @@ const Portfolio = () => {
 						src="../assets/quizo.png"
 						alt="quiz-app-portfolio"
 					/>
-					<p className="mt-5 font-opensans font-semibold text-lg lg:text-2xl text-sky-500">
+					<p className="mt-5 font-opensans font-semibold text-lg lg:text-2xl text-black">
 						Quizo
 					</p>
 					<div
@@ -59,7 +59,7 @@ const Portfolio = () => {
 						src="../assets/whatsapp-clone-portfolio.png"
 						alt="rana-shop-portfolio"
 					/>
-					<p className="mt-5 lg:text-2xl font-opensans text-center font-semibold text-lg text-sky-500">
+					<p className="mt-5 lg:text-2xl font-opensans text-center font-semibold text-lg text-black">
 						WhatsApp-Clone
 					</p>
 					<div

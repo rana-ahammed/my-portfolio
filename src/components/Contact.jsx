@@ -33,7 +33,7 @@ const Contact = () => {
 						<p className="text-md font-opensans font-semibold">
 							Email
 						</p>
-						<p className="text-sm font-opensans font-light text-gray-600 mb-3">
+						<p className="text-sm font-opensans font-light text-gray-700 mb-3">
 							rana.ahammed.012@gmail.com
 						</p>
 
@@ -52,7 +52,7 @@ const Contact = () => {
 						<p className="text-md font-opensans font-semibold">
 							WhatsApp
 						</p>
-						<p className="text-sm font-opensans font-light text-gray-600 mb-3">
+						<p className="text-sm font-opensans font-light text-gray-700 mb-3">
 							(+88) 01303173740
 						</p>
 
@@ -71,7 +71,7 @@ const Contact = () => {
 						<p className="text-md font-opensans font-semibold">
 							Skype
 						</p>
-						<p className="text-sm font-opensans font-light text-gray-600 mb-3">
+						<p className="text-sm font-opensans font-light text-gray-700 mb-3">
 							live:.cid.3ae481636a8c7eea
 						</p>
 
@@ -154,7 +154,7 @@ const Contact = () => {
 
 						<button
 							type="submit"
-							className="bg-sky-500 block mx-auto font-semibold text-white mt-5 text-center  hover:bg-sky-400 transition duration-500 rounded-lg px-4 py-2 lg:p-5"
+							className="bg-sky-400 block mx-auto font-semibold text-black mt-5 text-center  hover:bg-sky-500 transition duration-500 rounded-lg px-4 py-2 lg:p-5"
 						>
 							SEND ME A MESSAGE
 						</button>
