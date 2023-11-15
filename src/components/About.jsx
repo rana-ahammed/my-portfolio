@@ -58,7 +58,7 @@ const About = () => {
 						</p>
 
 						<a
-							className="bg-sky-500 rounded-lg p-4 w-full lg:w-3/5 text-center mt-6 font-bold text-lg mx-auto"
+							className="bg-sky-400 hover:bg-sky-500 text-black rounded-lg p-4 w-full lg:w-3/5 text-center mt-6 font-bold text-lg mx-auto"
 							href="../assets/cv-rana-ahammed.pdf"
 							download
 						>

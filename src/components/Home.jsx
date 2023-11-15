@@ -57,7 +57,7 @@ const Home = () => {
 
 				{/* <div className="flex flex-col items-center w-full mt-6 h-auto gap-4"> */}
 				<a
-					className="bg-sky-500 p-4 rounded-lg text-xl font-bold mx-auto text-center"
+					className="bg-sky-400 hover:bg-sky-500 text-black p-4 rounded-lg text-xl font-bold mx-auto text-center"
 					href="../assets/cv-rana-ahammed.pdf"
 					download
 				>
