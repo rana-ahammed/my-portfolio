@@ -90,6 +90,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 					<button
 						className="rounded-full bg-sky-400 p-2 text-black"
 						onClick={() => setIsMenuToggled(!isMenuToggled)}
+						aria-label="hamburger menu"
 					>
 						<GiHamburgerMenu />
 					</button>
