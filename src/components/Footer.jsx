@@ -27,6 +27,7 @@ const Footer = () => {
 					href="https://github.com/rana-ahammed"
 					target="_blank"
 					rel="noreferrer"
+					aria-label="github profile link"
 				>
 					<FaGithubSquare />
 				</a>
@@ -34,6 +35,7 @@ const Footer = () => {
 					href="https://linkedin.com/in/rana-ahammed"
 					target="_blank"
 					rel="noreferrer"
+					aria-label="linkedin profile link"
 				>
 					<FaLinkedin />
 				</a>
@@ -41,6 +43,7 @@ const Footer = () => {
 					href="https://facebook.com/rana6220"
 					target="_blank"
 					rel="noreferrer"
+					aria-label="facebook profile link"
 				>
 					<FaFacebookSquare />
 				</a>

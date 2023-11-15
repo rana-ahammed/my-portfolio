@@ -7,6 +7,7 @@ const SocialMediaIcons = () => {
 				href="https://linkedin.com/in/rana-ahammed"
 				target="_blank"
 				rel="noreferrer"
+				aria-label="linkedin-profile-link"
 			>
 				<BsLinkedin className="h-8 w-8 hover:bg-gray-600" />
 			</a>
@@ -14,6 +15,7 @@ const SocialMediaIcons = () => {
 				href="https://github.com/rana-ahammed"
 				target="_blank"
 				rel="noreferrer"
+				aria-label="github profile link"
 			>
 				<BsGithub className="h-8 w-8 hover:bg-gray-600 hover:rounded-full" />
 			</a>
