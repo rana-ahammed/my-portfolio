@@ -103,7 +103,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 						<div className="flex justify-end p-12">
 							<button
 								onClick={() => setIsMenuToggled(!isMenuToggled)}
-								className="text-black w-10 h-10"
+								className="text-black w-10 h-10 text-2xl hover:bg-sky-700 rounded-full bg-sky-600"
 							>
 								X
 							</button>
