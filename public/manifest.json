@@ -3,27 +3,92 @@
 	"name": "Rana",
 	"icons": [
 		{
-			"src": "coding.png",
-			"sizes": "64x64 32x32 24x24 16x16",
-			"type": "image/png",
-			"purpose": "any maskable"
-		},
-		{
-			"src": "coding.png",
+			"src": "logo192.png",
 			"type": "image/png",
 			"sizes": "192x192",
-			"purpose": "any maskable"
+			"purpose": "any"
 		},
 		{
-			"src": "coding.png",
+			"src": "logo192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "maskable"
+		},
+		{
+			"src": "logo512.png",
 			"type": "image/png",
 			"sizes": "512x512",
-			"purpose": "any maskable"
+			"purpose": "any"
+		},
+		{
+			"src": "logo512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable"
 		}
 	],
 	"start_url": ".",
 	"display": "standalone",
 	"theme_color": "#000000",
 	"background_color": "#ffffff",
-	"prefer_related_applications": true
+	"prefer_related_applications": true,
+	"description": "My Name is Rana Ahammed. I am a MERN Stack Web Developer.",
+	"screenshots": [
+		{
+			"src": "rana-home-desktop.png",
+			"sizes": "3264x1836",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Home Section"
+		},
+		{
+			"src": "rana-about-desktop.png",
+			"sizes": "3264x1836",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "About Section"
+		},
+		{
+			"src": "rana-skills-desktop.png",
+			"sizes": "3264x1836",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Skills Section"
+		},
+		{
+			"src": "rana-portfolio-desktop.png",
+			"sizes": "3264x1836",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Portfolio Section"
+		},
+		{
+			"src": "rana-home-mobile.png",
+			"sizes": "850x1536",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "Home Section"
+		},
+		{
+			"src": "rana-about-mobile.png",
+			"sizes": "850x1536",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "About Section"
+		},
+		{
+			"src": "rana-skills-mobile.png",
+			"sizes": "850x1536",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "Skills Section"
+		},
+		{
+			"src": "rana-portfolio-mobile.png",
+			"sizes": "850x1536",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "Portfolio Section"
+		}
+	]
 }
