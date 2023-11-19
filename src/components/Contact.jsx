@@ -33,7 +33,7 @@ const Contact = () => {
 						<p className="text-md font-opensans font-semibold">
 							Email
 						</p>
-						<p className="text-sm font-opensans font-light text-gray-700 mb-3">
+						<p className="text-md font-opensans font-normal text-gray-900 mb-3">
 							rana.ahammed.012@gmail.com
 						</p>
 
@@ -41,7 +41,7 @@ const Contact = () => {
 							href="mailto:rana.ahammed.012@gmail.com"
 							target="_blank"
 							rel="noreferrer"
-							className="text-sm font-opensans font-light p-2 bg-gray-300 rounded-md"
+							className="text-md font-opensans font-normal p-2 bg-gray-300 rounded-md"
 						>
 							Contact me &rarr;
 						</a>
@@ -52,7 +52,7 @@ const Contact = () => {
 						<p className="text-md font-opensans font-semibold">
 							WhatsApp
 						</p>
-						<p className="text-sm font-opensans font-light text-gray-700 mb-3">
+						<p className="text-md font-opensans font-normal text-gray-900 mb-3">
 							(+88) 01303173740
 						</p>
 
@@ -60,7 +60,7 @@ const Contact = () => {
 							href="https://wa.me/+8801303173740"
 							target="_blank"
 							rel="noreferrer"
-							className="text-sm font-opensans font-light p-2 bg-gray-300 rounded-md flex items-center"
+							className="text-md font-opensans font-normal p-2 bg-gray-300 rounded-md flex items-center"
 						>
 							Contact me &rarr;
 						</a>
@@ -71,7 +71,7 @@ const Contact = () => {
 						<p className="text-md font-opensans font-semibold">
 							Skype
 						</p>
-						<p className="text-sm font-opensans font-light text-gray-700 mb-3">
+						<p className="text-md font-opensans font-normal text-gray-900 mb-3">
 							live:.cid.3ae481636a8c7eea
 						</p>
 
@@ -79,7 +79,7 @@ const Contact = () => {
 							href="https://join.skype.com/invite/uBwzx0mkTMdO"
 							target="_blank"
 							rel="noreferrer"
-							className="text-sm font-opensans font-light p-2 bg-gray-300 rounded-md"
+							className="text-md font-opensans font-normal p-2 bg-gray-300 rounded-md"
 						>
 							Contact me &rarr;
 						</a>
@@ -105,7 +105,7 @@ const Contact = () => {
 								required: true,
 								maxLength: 100,
 							})}
-							className="h-16 w-full text-md font-opensans font-light px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500  transition duration-200 mb-3 mt-2"
+							className="h-16 w-full text-md font-opensans font-normal px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500  transition duration-200 mb-3 mt-2"
 						/>
 						{errors.name && (
 							<p className="text-red-500 ml-5 mb-8">
@@ -123,7 +123,7 @@ const Contact = () => {
 								pattern:
 									/^[A-Z0-9._%+-]+@[A-Z0-9._%+-]+\.[A-Z]{2,}$/i,
 							})}
-							className="h-16 w-full text-md font-opensans font-light px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500  transition duration-200 mb-3"
+							className="h-16 w-full text-md font-opensans font-normal px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500  transition duration-200 mb-3"
 						/>
 						{errors.email && (
 							<p className="text-red-500 ml-5 mb-8">
@@ -141,7 +141,7 @@ const Contact = () => {
 								required: true,
 								maxLength: 2000,
 							})}
-							className="h-auto w-full text-md font-opensans font-light py-2 px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500 transition duration-200 mb-2 resize-none"
+							className="h-auto w-full text-md font-opensans font-normal py-2 px-6 bg-gray-200 border-2 rounded-lg border-gray-500 border-opacity-50 outline-none focus:border-blue-500 transition duration-200 mb-2 resize-none"
 						/>
 						{errors.message && (
 							<p className="text-red-500 ml-5 mb-8">
