@@ -25,7 +25,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										HTML
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -36,7 +36,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										CSS
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Intermediate
 									</p>
 								</div>
@@ -47,7 +47,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										TailwindCSS
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -58,7 +58,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										Material-UI
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Intermediate
 									</p>
 								</div>
@@ -71,7 +71,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										Bootstrap
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Intermediate
 									</p>
 								</div>
@@ -82,7 +82,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										React
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -93,7 +93,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										JavaScript
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -104,7 +104,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										Git
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -126,7 +126,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										VS Code
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -137,7 +137,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										Postman
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -148,7 +148,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										Redux Dev Tool
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -161,7 +161,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										GitHub
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -172,7 +172,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										Chrome Dev Tool
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -183,7 +183,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										MongoDB Compass
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -206,7 +206,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										NodeJs
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Intermediate
 									</p>
 								</div>
@@ -217,7 +217,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										ExpressJs
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Intermediate
 									</p>
 								</div>
@@ -228,7 +228,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										MongoDB
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Intermediate
 									</p>
 								</div>
@@ -239,7 +239,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										Redux
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -252,7 +252,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										Mongoose
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -263,7 +263,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										Vercel
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -274,7 +274,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										FireBase
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
@@ -285,7 +285,7 @@ const Skills = () => {
 									<p className="font-opensans font-semibold text-lg">
 										Netlify
 									</p>
-									<p className="font-opensans text-gray-700 font-thin text-sm">
+									<p className="font-opensans text-gray-900 font-normal text-md">
 										Advanced
 									</p>
 								</div>
