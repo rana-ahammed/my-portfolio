@@ -13,7 +13,7 @@ const Home = () => {
 			<div className="lg:order-2 flex justify-center basis-3/5 lg:mt-16 xl:mt-0">
 				<img
 					className="z-10 xs:w-310px xs:h-310px w-400 h-400 max-w-[320px] xl:max-w-[400px] rounded-full p-2 shadow-lg"
-					src="../assets/profile-image-circular.png"
+					src="https://i.postimg.cc/RVRjgR24/profile-image-circular.png"
 					alt="profile"
 				/>
 			</div>
