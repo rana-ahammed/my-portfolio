@@ -60,7 +60,7 @@ const Home = () => {
 					className="bg-sky-400 hover:bg-sky-500 text-black p-4 rounded-lg text-xl font-bold mx-auto text-center"
 					href="https://docs.google.com/document/d/1yhod91mb04PdQIAl-uSpk8jpH6nTOESZn2WDjTeoiLM/edit?usp=sharing"
 				>
-					Click to See My Resume
+					Visit My Resume
 				</a>
 
 				<SocialMediaIcons />
