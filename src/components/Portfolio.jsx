@@ -38,7 +38,7 @@ const Portfolio = () => {
 				<div className="flex flex-col bg-gray-200 p-2 rounded-lg items-center mb-8">
 					<img
 						className="h-64 w-full rounded-md"
-						src="https://i.postimg.cc/Qt6RXkZc/rana-shop-portfolio.png"
+						src="https://i.postimg.cc/kMpb6Wrz/quiznook-home-desktop-dark.png"
 						alt="quiznook portfolio website image"
 					/>
 					<p className="mt-5 font-opensans font-semibold text-lg lg:text-2xl text-black">
@@ -115,7 +115,7 @@ const Portfolio = () => {
 			<Modal showModal={showModal2} setShowModal={setShowModal2}>
 				<img
 					className="mb-5 mt-1 h-64 w-full rounded-md"
-					src="https://i.postimg.cc/Qt6RXkZc/rana-shop-portfolio.png"
+					src="https://i.postimg.cc/kMpb6Wrz/quiznook-home-desktop-dark.png"
 					alt="quiz portfolio website image"
 				/>
 				<p className="xs:text-lg lg:text-2xl font-semibold font-opensans text-center">
