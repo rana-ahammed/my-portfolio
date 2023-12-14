@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Modal from "../modals/Modal";
+import gentStyleImg from "https://i.postimg.cc/g2vXT5wb/gentstyle-home-desktop.png";
+import quiznookImg from "https://i.postimg.cc/Qt6RXkZc/rana-shop-portfolio.png";
+import skyInsightImg from "https://i.postimg.cc/sX2M1gT3/skyinsight-home-desktop-dark.png";
 
 const Portfolio = () => {
 	const [showModal, setShowModal] = useState(false);
@@ -20,11 +23,11 @@ const Portfolio = () => {
 				<div className="flex flex-col bg-gray-200 p-2 rounded-lg items-center mb-8">
 					<img
 						className="h-64 w-full rounded-md"
-						src="../assets/rana-shop-portfolio.png"
-						alt="rana-shop-portfolio"
+						src={gentStyleImg}
+						alt="ecommerce portfolio website image"
 					/>
 					<p className="mt-5 font-opensans font-semibold text-lg lg:text-2xl text-black">
-						Rana-Shop
+						GentStyle
 					</p>
 					<div
 						className="flex items-center xs:text-lg lg:text-xl gap-2 bg-gray-300 my-3 hover:bg-sky-500 p-2 rounded-md cursor-pointer hover:text-white"
@@ -38,11 +41,11 @@ const Portfolio = () => {
 				<div className="flex flex-col bg-gray-200 p-2 rounded-lg items-center mb-8">
 					<img
 						className="h-64 w-full rounded-md"
-						src="../assets/quizo.png"
-						alt="quiz-app-portfolio"
+						src={quiznookImg}
+						alt="quiznook portfolio website image"
 					/>
 					<p className="mt-5 font-opensans font-semibold text-lg lg:text-2xl text-black">
-						Quizo
+						Quiznook
 					</p>
 					<div
 						className="flex items-center gap-2 xs:text-lg lg:text-xl bg-gray-300 my-3 hover:bg-sky-500 hover:text-white p-2 rounded-md cursor-pointer"
@@ -56,11 +59,11 @@ const Portfolio = () => {
 				<div className="flex flex-col bg-gray-200 p-2 rounded-lg items-center mb-8">
 					<img
 						className="h-64 w-full rounded-md"
-						src="../assets/whatsapp-clone-portfolio.png"
-						alt="rana-shop-portfolio"
+						src={skyInsightImg}
+						alt="weather portfolio website image"
 					/>
 					<p className="mt-5 lg:text-2xl font-opensans text-center font-semibold text-lg text-black">
-						WhatsApp-Clone
+						SkyInsight
 					</p>
 					<div
 						className="flex items-center xs:text-lg lg:text-xl gap-2  bg-gray-300 my-3 hover:bg-sky-500 hover:text-white p-2 rounded-md cursor-pointer"
@@ -76,12 +79,12 @@ const Portfolio = () => {
 			<Modal showModal={showModal} setShowModal={setShowModal}>
 				<img
 					className="mb-5 mt-1 h-64 w-full rounded-md"
-					src="../assets/rana-shop-portfolio.png"
-					alt="rana-shop-portfolio"
+					src={gentStyleImg}
+					alt="e-commerce portfolio website image"
 				/>
 				<p className="xs:text-lg lg:text-2xl font-semibold font-opensans text-center">
 					Project's Name:{" "}
-					<span className="text-sky-500">Rana-Shop</span>
+					<span className="text-sky-500">GentStyle</span>
 				</p>
 				<p className="xs:text-md lg:text-xl font-semibold text-gray-600 font-opensans py-5">
 					<strong className="text-lg font-bold text-black">
@@ -93,7 +96,7 @@ const Portfolio = () => {
 				<div className="flex gap-5 justify-center text-lg lg:text-xl">
 					<button className="bg-gray-300 hover:bg-sky-500 hover:text-white p-2 text-black font-opensans font-semibold rounded-md">
 						<a
-							href="https://rana-shop.vercel.app"
+							href="https://gentstyle.vercel.app"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -102,7 +105,7 @@ const Portfolio = () => {
 					</button>
 					<button className="bg-gray-300 hover:bg-sky-500 hover:text-white text-black font-opensans font-semibold p-2 rounded-md">
 						<a
-							href="https://github.com/rana-ahammed/rana-shop"
+							href="https://github.com/rana-ahammed/gentstyle"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -115,11 +118,12 @@ const Portfolio = () => {
 			<Modal showModal={showModal2} setShowModal={setShowModal2}>
 				<img
 					className="mb-5 mt-1 h-64 w-full rounded-md"
-					src="../assets/quizo.png"
-					alt="quiz-app-portfolio"
+					src={quiznookImg}
+					alt="quiz portfolio website image"
 				/>
 				<p className="xs:text-lg lg:text-2xl font-semibold font-opensans text-center">
-					Project's Name: <span className="text-sky-500">Quizo</span>
+					Project's Name:{" "}
+					<span className="text-sky-500">Quiznook</span>
 				</p>
 				<p className="xs:text-md lg:text-xl font-semibold text-gray-600 font-opensans py-5">
 					<strong className="text-lg font-bold text-black">
@@ -131,7 +135,7 @@ const Portfolio = () => {
 				<div className="flex gap-5 justify-center text-lg lg:text-xl">
 					<button className="bg-gray-300 hover:bg-sky-500 hover:text-white p-2 text-black font-opensans font-semibold rounded-md">
 						<a
-							href="https://quizo-rana.vercel.app"
+							href="https://quiznook.vercel.app"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -140,7 +144,7 @@ const Portfolio = () => {
 					</button>
 					<button className="bg-gray-300 hover:bg-sky-500 hover:text-white text-black font-opensans font-semibold p-2 rounded-md">
 						<a
-							href="https://github.com/rana-ahammed/quizo"
+							href="https://github.com/rana-ahammed/quiznook"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -153,24 +157,23 @@ const Portfolio = () => {
 			<Modal showModal={showModal3} setShowModal={setShowModal3}>
 				<img
 					className="mb-5 mt-1 h-64 w-full rounded-md"
-					src="../assets/whatsapp-clone-portfolio.png"
-					alt="ecommerce-portfolio"
+					src={skyInsightImg}
+					alt="weather portfolio website image"
 				/>
 				<p className="xs:text-lg lg:text-2xl font-semibold font-opensans text-center">
 					Project's Name:{" "}
-					<span className="text-sky-500">WhatsApp-Clone</span>
+					<span className="text-sky-500">SkyInsight</span>
 				</p>
 				<p className="xs:text-md lg:text-xl font-semibold text-gray-600 font-opensans py-5">
 					<strong className="text-lg font-bold text-black">
 						Technology Used:
 					</strong>{" "}
-					React, Material-UI, NodeJs, Express, Mongoose, MongoDB,
-					Socket.io, Multer, Jwt-Decode
+					ReactJs, Tailwindcss, NodeJs, ExpressJs, OpenweathermapApi
 				</p>
 				<div className="flex gap-5 justify-center text-lg lg:text-xl">
 					<button className="bg-gray-300 hover:bg-sky-500 hover:text-white p-2 text-black font-opensans font-semibold rounded-md">
 						<a
-							href="https://whatsapp-clone-five-orcin.vercel.app"
+							href="https://skyinsight.vercel.app"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -179,7 +182,7 @@ const Portfolio = () => {
 					</button>
 					<button className="bg-gray-300 hover:bg-sky-500 hover:text-white text-black font-opensans font-semibold p-2 rounded-md">
 						<a
-							href="https://github.com/rana-ahammed/whatsapp-clone"
+							href="https://github.com/rana-ahammed/skyinsight"
 							target="_blank"
 							rel="noreferrer"
 						>

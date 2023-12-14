@@ -58,7 +58,7 @@ const Home = () => {
 				{/* <div className="flex flex-col items-center w-full mt-6 h-auto gap-4"> */}
 				<a
 					className="bg-sky-400 hover:bg-sky-500 text-black p-4 rounded-lg text-xl font-bold mx-auto text-center"
-					href="https://docs.google.com/document/d/1yhod91mb04PdQIAl-uSpk8jpH6nTOESZn2WDjTeoiLM/edit?usp=sharing"
+					href="https://drive.google.com/file/d/1hFO6rv3oj3GXt_JO6M4iSEAYb1Krq7en/view?usp=sharing"
 				>
 					Visit My Resume
 				</a>
