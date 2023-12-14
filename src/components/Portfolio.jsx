@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Modal from "../modals/Modal";
-import gentStyleImg from "https://i.postimg.cc/g2vXT5wb/gentstyle-home-desktop.png";
-import quiznookImg from "https://i.postimg.cc/Qt6RXkZc/rana-shop-portfolio.png";
-import skyInsightImg from "https://i.postimg.cc/sX2M1gT3/skyinsight-home-desktop-dark.png";
 
 const Portfolio = () => {
 	const [showModal, setShowModal] = useState(false);
@@ -23,7 +20,7 @@ const Portfolio = () => {
 				<div className="flex flex-col bg-gray-200 p-2 rounded-lg items-center mb-8">
 					<img
 						className="h-64 w-full rounded-md"
-						src={gentStyleImg}
+						src="https://i.postimg.cc/g2vXT5wb/gentstyle-home-desktop.png"
 						alt="ecommerce portfolio website image"
 					/>
 					<p className="mt-5 font-opensans font-semibold text-lg lg:text-2xl text-black">
@@ -41,7 +38,7 @@ const Portfolio = () => {
 				<div className="flex flex-col bg-gray-200 p-2 rounded-lg items-center mb-8">
 					<img
 						className="h-64 w-full rounded-md"
-						src={quiznookImg}
+						src="https://i.postimg.cc/Qt6RXkZc/rana-shop-portfolio.png"
 						alt="quiznook portfolio website image"
 					/>
 					<p className="mt-5 font-opensans font-semibold text-lg lg:text-2xl text-black">
@@ -59,7 +56,7 @@ const Portfolio = () => {
 				<div className="flex flex-col bg-gray-200 p-2 rounded-lg items-center mb-8">
 					<img
 						className="h-64 w-full rounded-md"
-						src={skyInsightImg}
+						src="https://i.postimg.cc/sX2M1gT3/skyinsight-home-desktop-dark.png"
 						alt="weather portfolio website image"
 					/>
 					<p className="mt-5 lg:text-2xl font-opensans text-center font-semibold text-lg text-black">
@@ -79,7 +76,7 @@ const Portfolio = () => {
 			<Modal showModal={showModal} setShowModal={setShowModal}>
 				<img
 					className="mb-5 mt-1 h-64 w-full rounded-md"
-					src={gentStyleImg}
+					src="https://i.postimg.cc/g2vXT5wb/gentstyle-home-desktop.png"
 					alt="e-commerce portfolio website image"
 				/>
 				<p className="xs:text-lg lg:text-2xl font-semibold font-opensans text-center">
@@ -118,7 +115,7 @@ const Portfolio = () => {
 			<Modal showModal={showModal2} setShowModal={setShowModal2}>
 				<img
 					className="mb-5 mt-1 h-64 w-full rounded-md"
-					src={quiznookImg}
+					src="https://i.postimg.cc/Qt6RXkZc/rana-shop-portfolio.png"
 					alt="quiz portfolio website image"
 				/>
 				<p className="xs:text-lg lg:text-2xl font-semibold font-opensans text-center">
@@ -157,7 +154,7 @@ const Portfolio = () => {
 			<Modal showModal={showModal3} setShowModal={setShowModal3}>
 				<img
 					className="mb-5 mt-1 h-64 w-full rounded-md"
-					src={skyInsightImg}
+					src="https://i.postimg.cc/sX2M1gT3/skyinsight-home-desktop-dark.png"
 					alt="weather portfolio website image"
 				/>
 				<p className="xs:text-lg lg:text-2xl font-semibold font-opensans text-center">
